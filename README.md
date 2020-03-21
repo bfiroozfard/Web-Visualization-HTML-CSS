@@ -1,37 +1,90 @@
-## Welcome to GitHub Pages
+# Web Design HTML-BOOTSTRAO-CSS - Web Visualization Dashboard (Latitude)
 
-You can use the [editor on GitHub](https://github.com/bfiroozfard/HTML/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Latitude - Latitude Analysis Dashboard with Attitude
 
-###Weather Data
+ we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](Resources/cities.csv).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
 
-```markdown
-Syntax highlighted code block
+### Website Requirements
 
-# Header 1
-## Header 2
-### Header 3
+The website must consist of 7 pages total, including:
 
-- Bulleted
-- List
+* A [landing page](#landing-page) containing:
+  * An explanation of the project.
+  * Links to each visualizations page.
+* Four [visualization pages](#visualization-pages), each with:
+  * A descriptive title and heading tag.
+  * The plot/visualization itself for the selected comparison.
+  * A paragraph describing the plot and its significance.
+* A ["Comparisons" page](#comparisons-page) that:
+  * Contains all of the visualizations on the same page so we can easily visually compare them.
+  * Uses a bootstrap grid for the visualizations.
+    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
+* A ["Data" page](#data-page) that:
+  * Displays a responsive table containing the data used in the visualizations.
+    * The table must be a bootstrap table component.
+    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
 
-1. Numbered
-2. List
+The website must, at the top of every page, have a navigation menu that:
 
-**Bold** and _Italic_ and `Code` text
+* Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
+* Contains a dropdown on the right of the navbar named "Plots" which provides links to each individual visualization page.
+* Provides two more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page.
+* Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
 
-[Link](url) and ![Image](src)
-```
+Finally, the website must be deployed to GitHub pages.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bfiroozfard/HTML/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Screenshots
 
-### Support or Contact
+This section contains screenshots of each page that must be built, at varying screen widths. These are a guide; you can meet the requirements without having the pages look exactly like the below images.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### Landing page
+
+Large screen:
+![Landing page large screen](Images/landing-lg.png)
+
+Small screen:
+![Landing page small screen](Images/landing-sm.png)
+￼
+
+#### Comparisons page
+
+Large screen:
+![comparison page large screen](Images/comparison-lg.png)
+
+Small screen:
+![comparison page small screen](Images/comparison-sm.png)
+
+#### Data page
+
+Large screen:
+![data page large screen](Images/data-lg.png)
+
+Small screen:
+![data page small screen](Images/data-sm.png)
+
+#### Visualization pages
+
+You'll build four of these, one for each visualization. Here's an example of one:
+
+Large screen:
+![visualize page large screen](Images/visualize-lg.png)
+
+Small screen:
+![visualize page small screen](Images/visualize-sm.png)
+
+#### Navigation menu
+
+Large screen:
+![nav menu large screen](Images/nav-lg.png)
+
+Small screen:
+![nav menu small screen](Images/nav-sm.png)
+
+
+
