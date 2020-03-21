@@ -1,6 +1,4 @@
 # Web Design HTML-BOOTSTRAP-CSS -
-# Web Visualization Dashboard (Latitude)
-
 
 # Latitude Analysis Dashboard with Attitude
 
